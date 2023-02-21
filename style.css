@@ -12,7 +12,8 @@ body {
 .header,
 .information,
 .quote, 
-.call-to-action {
+.call-to-action,
+.footer {
     padding-left: 150px;
     padding-right: 150px;
 }
