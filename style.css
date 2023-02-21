@@ -1,6 +1,49 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header,
+.information,
+.quote, 
+.call-to-action {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 .header {
     background: #1F2937;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.header .top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: baseline;
+    width: 80vw;
+}
+
+.header .hero-text {
+    display: flex;
+    max-width: 50%;
+    flex-wrap: wrap;
+}
+
+.header .image {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .header .header-logo {
     font-size: 24px;
@@ -8,7 +51,16 @@
 }
 
 .header ul {
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #E5E7EB;
 }
 
 .header .main-text {
@@ -39,6 +91,7 @@
 
 .quote {
     background: #E5E7EB;
+
 }
 
 .quote .quote-text {
@@ -50,6 +103,17 @@
 
 .call-to-action {
     background: #3882F6;
+    color: #F9FAF8;
+}
+
+.call-to-action .call {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.call-to-action .instruction {
+    font-size: 14px;
+    font-weight: lighter;
 }
 
 .call-to-action button {
@@ -58,6 +122,14 @@
 
 .footer {
     background: #1F2937;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    color: #E5E7EB;
+    align-self: center;
 }
 
 button {
