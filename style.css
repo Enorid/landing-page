@@ -12,10 +12,13 @@ body {
 .header,
 .information,
 .quote, 
-.call-to-action,
 .footer {
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.call-to-action {
+    margin: 48px 150px;
 }
 
 .header {
@@ -127,7 +130,10 @@ body {
 
 .quote {
     background: #E5E7EB;
-
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .quote .quote-text {
@@ -135,11 +141,34 @@ body {
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+    padding: 0;
+    margin: 0;
+}
+
+.quote .author {
+    font-weight: bold;
+    text-align: end;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    margin-right: 32px;
 }
 
 .call-to-action {
     background: #3882F6;
     color: #F9FAF8;
+    padding: 32px 64px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.call, 
+.instruction {
+    padding: 0;
+    margin: 0;
 }
 
 .call-to-action .call {
@@ -154,6 +183,7 @@ body {
 
 .call-to-action button {
     border: 1px solid #F9FAF8;
+    padding: 8px 24px;
 }
 
 .footer {
